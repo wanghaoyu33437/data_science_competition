@@ -1,0 +1,6 @@
+opencv_python==4.5.3.56
+requests==2.26.0
+scipy==1.7.1
+numpy==1.20.3
+imageio==2.9.0
+

@@ -1,0 +1,1 @@
+python test/inference.py --gpu 0
