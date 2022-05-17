@@ -10,5 +10,9 @@
 
 #### 2021.1.25
 
-- #### [天池比赛AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习](https://tianchi.aliyun.com/competition/entrance/531939/introduction)(rank 8/3691)
+- #### [天池-AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习](https://tianchi.aliyun.com/competition/entrance/531939/introduction)(rank 8/3691)
+
+#### 2021.3.25
+
+- #### [天池-真实场景篡改图像检测挑战赛](https://tianchi.aliyun.com/competition/entrance/531945/introduction)(rank 15/1149)
 
