@@ -16,3 +16,4 @@
 
 - #### [天池-真实场景篡改图像检测挑战赛](https://tianchi.aliyun.com/competition/entrance/531945/introduction)(rank 15/1149)
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=wanghaoyu33437)](https://github.com/anuraghazra/github-readme-stats)
