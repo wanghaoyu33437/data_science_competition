@@ -2,7 +2,7 @@
 
 本次CVPR 2022 Art Of Robustness Workshop-Robust Models towards Open-world Classification中，我们团队参加的是Track2: Open Set Defense，通过在已有本地数据集上构建不同类别对抗样本用于训练有效的分类器，区分不同类型的对抗样本与正常样本（二分类问题）。
 
-​                               ![image-20220526201537629](img\image-20220526201537629.png)
+​                               ![image-20220526201537629](./img/image-20220526201537629.png)
 
 <center><b>图1 赛题分析</b></center>
 
