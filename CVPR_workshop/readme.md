@@ -8,7 +8,7 @@
 
 根据官方的在Phase I, Phase II 阶段的测试集大致可以估计赛题中对抗样本类型，其中包括：Linf(PGD[1])、L2(PGD[1]/Deepfool[2]/CW[3])、AdvPatch[4]、Square[5]、AdvDrop[6]等。
 
-​         ![image-20220526201627788](img\image-20220526201627788.png)
+​         ![image-20220526201627788](./img\image-20220526201627788.png)
 
 <center><b>图2 对抗样本分类图，从左到右分别是Linf、L2、AdvPatch、Square、AdvDrop</b></center>
 
