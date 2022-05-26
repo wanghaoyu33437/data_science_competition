@@ -2,13 +2,13 @@
 
 本次CVPR 2022 Art Of Robustness Workshop-Robust Models towards Open-world Classification中，我们团队参加的是Track2: Open Set Defense，通过在已有本地数据集上构建不同类别对抗样本用于训练有效的分类器，区分不同类型的对抗样本与正常样本（二分类问题）。
 
-​                               ![image-20220526201537629](D:\PychramProjects\data_sciences_competition\CVPR_workshop\img\image-20220526201537629.png)
+​                               ![image-20220526201537629](img\image-20220526201537629.png)
 
 <center><b>图1 赛题分析</b></center>
 
 根据官方的在Phase I, Phase II 阶段的测试集大致可以估计赛题中对抗样本类型，其中包括：Linf(PGD[1])、L2(PGD[1]/Deepfool[2]/CW[3])、AdvPatch[4]、Square[5]、AdvDrop[6]等。
 
-​         ![image-20220526201627788](D:\PychramProjects\data_sciences_competition\CVPR_workshop\img\image-20220526201627788.png)
+​         ![image-20220526201627788](img\image-20220526201627788.png)
 
 <center><b>图2 对抗样本分类图，从左到右分别是Linf、L2、AdvPatch、Square、AdvDrop</b></center>
 
@@ -24,7 +24,7 @@
 
 本文方案框架如图所示：
 
-![image-20220526202251748](D:\PychramProjects\data_sciences_competition\CVPR_workshop\img\image-20220526202251748.png)
+![image-20220526202251748](img\image-20220526202251748.png)
 
  
 
@@ -34,7 +34,7 @@
 - 模型结构：考虑到官方模型提交有参数大小和flops限制，我们最终选择Resnet50网络结构，参考文献[8]中MLP在上游任务训练基础上更适合open set的下游任务，于是在fc层中增加一层全连接层，具体参数见代码，经实验验证，该方式的确要比单层分数高。除了此种模型结构，我们参考Domain generalization相关方法，设计Double Head结构，一个在用于动物种类分类，另一个用于对抗样本分类，最终分数与二分类接近，但后期时间精力有限没有进一步深入研究，个人感觉这个思路更适合此赛道。
 - **训练方法：**图像预处理，选择基本的flip/rotate/center crop增强，未采用Normalize（消融实验中具体分析），采用Prob=0.2的MixUp；损失函数和优化器选择：交叉熵损失，Optimizer选择AdamW，lr设置为1e-3，scheduler选择CosineLRScheduler，前30 epoch 采用Warmup，min_lr设置为1e-6，batch_size 等于256，epochs等于300，训练过程学习率变化情况如图4所示：
 
-​                                                          ![image-20220526202559758](D:\PychramProjects\data_sciences_competition\CVPR_workshop\img\image-20220526202559758.png)
+​                                                          ![image-20220526202559758](img\image-20220526202559758.png)
 
 <center><b>图4 学习率变化</b></center>
 
