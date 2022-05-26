@@ -18,4 +18,4 @@
 
 #### 2021.5.21
 
-- #### **[CVPR 2022 Art Of Robustness Workshop——Robust Models towards Open-world Classification：Track2: Open Set Defense ]**(https://aisafety.sensetime.com/)(rank 3)
+- #### **[CVPR 2022 Art Of Robustness Workshop——Robust Models towards Open-world Classification：Track2: Open Set Defense ](https://aisafety.sensetime.com/)**(rank 3)
