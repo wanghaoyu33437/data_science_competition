@@ -1,0 +1,1 @@
+python train.py --MIXUP 0.3 --LS 0. --GPU 0,1

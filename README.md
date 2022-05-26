@@ -16,4 +16,6 @@
 
 - #### [天池-真实场景篡改图像检测挑战赛](https://tianchi.aliyun.com/competition/entrance/531945/introduction)(rank 15/1149)
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=wanghaoyu33437)](https://github.com/anuraghazra/github-readme-stats)
+#### 2021.5.21
+
+- #### [CVPR 2022 Art Of Robustness Workshop——Robust Models towards Open-world Classification：Track2: Open Set Defense ](https://aisafety.sensetime.com/)(rank 3)
